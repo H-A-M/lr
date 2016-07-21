@@ -2,7 +2,7 @@
 -- Install a lua-sockets package and give this try:
 --      lr ./testing/grab.lua --url="http://www.google.com"
 
-if not url or arg[1] then return; end
+if not (url or arg[1]) then return; end
 
 local io = require("io")
 local http = require("socket.http")
